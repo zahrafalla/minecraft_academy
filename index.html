@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ماینکرفت آموزش | نسخه فارسی</title>
+    <!-- استفاده از فونت پیکسلی برای تیترها -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --mc-green: #3cb055;
+            --mc-dark-green: #2f7543;
+            --mc-dirt: #795548;
+            --mc-stone: #7a7a7a;
+            --mc-white: #ffffff;
+        }
+
+        body {
+            font-family: 'Tahoma', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* استایل پیکسلی برای تیترها */
+        h1, h2, h3, .mc-font {
+            font-family: 'VT323', monospace;
+            text-transform: uppercase;
+        }
+
+        /* هدر سایت */
+        header {
+            background-color: #313131;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid var(--mc-stone);
+        }
+
+        header .logo {
+            color: var(--mc-green);
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: var(--mc-green);
+        }
+
+        /* بخش قهرمان (Hero Section) */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://education.minecraft.net/content/dam/education-edition/home/Hero_Desktop.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            border-bottom: 8px solid var(--mc-dirt);
+        }
+
+        .hero h1 { font-size: 60px; margin-bottom: 10px; }
+        .hero p { font-size: 24px; margin-bottom: 30px; }
+
+        /* دکمه‌های ماینکرفتی */
+        .btn-mc {
+            background-color: var(--mc-green);
+            border: 3px solid #1a4d23;
+            padding: 15px 30px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: inset -4px -4px 0px #2f7543;
+            transition: transform 0.1s;
+        }
+
+        .btn-mc:active {
+            transform: translateY(4px);
+            box-shadow: none;
+        }
+
+        /* بخش ویژگی‌ها (Cards) */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px;
+        }
+
+        .card {
+            background: white;
+            border: 4px solid #333;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 8px 8px 0px var(--mc-stone);
+        }
+
+        .card h3 { color: var(--mc-dark-green); }
+
+        footer {
+            background: #222;
+            color: #888;
+            text-align: center;
+            padding: 40px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo mc-font">MINECRAFT EDUCATION FA</div>
+        <nav>
+            <a href="#">شروع کار</a>
+            <a href="#">درس‌ها</a>
+            <a href="#">دانلود</a>
+            <a href="#">جامعه کاربران</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 class="mc-font">دنیایی برای یادگیری بسازید</h1>
+        <p>پلتفرمی بر پایه بازی که خلاقیت و حل مسئله را در محیطی جذاب تقویت می‌کند.</p>
+        <a href="#" class="btn-mc mc-font">همین حالا دانلود کنید</a>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3 class="mc-font">علوم کامپیوتر</h3>
+            <p>برنامه‌نویسی را با بلوک‌ها یا پایتون در دنیای ماینکرفت یاد بگیرید.</p>
+        </div>
+        <div class="card">
+            <h3 class="mc-font">ریاضیات</h3>
+            <p>مفاهیم هندسه و کسرها را با ساخت و ساز به صورت بصری درک کنید.</p>
+        </div>
+        <div class="card">
+            <h3 class="mc-font">تاریخ و فرهنگ</h3>
+            <p>بناهای تاریخی جهان را دوباره بسازید و در آن‌ها کاوش کنید.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>طراحی شده با ❤️ برای جامعه فارسی‌زبان ماینکرفت</p>
+        <p>© ۲۰۲۴ تمامی حقوق محفوظ است</p>
+    </footer>
+
+</body>
+</html>
 
